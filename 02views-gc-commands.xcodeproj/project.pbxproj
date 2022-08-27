@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21011C7228B84F4F0017A215 /* DrawArrowCGBlendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21011C7128B84F4F0017A215 /* DrawArrowCGBlendViewController.swift */; };
+		21011C7428B84F640017A215 /* DrawArrowUIKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21011C7328B84F640017A215 /* DrawArrowUIKitViewController.swift */; };
+		21011C7628B853790017A215 /* ArrowCGBlendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21011C7528B853790017A215 /* ArrowCGBlendView.swift */; };
+		21011C7828B859880017A215 /* ArrowUIKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21011C7728B859880017A215 /* ArrowUIKitView.swift */; };
+		21011C7A28B85ED30017A215 /* DrawArrowCGClippingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21011C7928B85ED30017A215 /* DrawArrowCGClippingViewController.swift */; };
 		210218762895B92300195DC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210218752895B92300195DC9 /* AppDelegate.swift */; };
 		210218782895B92300195DC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210218772895B92300195DC9 /* SceneDelegate.swift */; };
 		2102187A2895B92300195DC9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210218792895B92300195DC9 /* RootViewController.swift */; };
 		2102187F2895B92400195DC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2102187E2895B92400195DC9 /* Assets.xcassets */; };
 		210218822895B92400195DC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210218802895B92400195DC9 /* LaunchScreen.storyboard */; };
+		217EA76C28B9197000CB24F8 /* ArrowClippingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217EA76B28B9197000CB24F8 /* ArrowClippingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		210218722895B92300195DC9 /* template-swift-no-sb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "template-swift-no-sb.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21011C7128B84F4F0017A215 /* DrawArrowCGBlendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawArrowCGBlendViewController.swift; sourceTree = "<group>"; };
+		21011C7328B84F640017A215 /* DrawArrowUIKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawArrowUIKitViewController.swift; sourceTree = "<group>"; };
+		21011C7528B853790017A215 /* ArrowCGBlendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowCGBlendView.swift; sourceTree = "<group>"; };
+		21011C7728B859880017A215 /* ArrowUIKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowUIKitView.swift; sourceTree = "<group>"; };
+		21011C7928B85ED30017A215 /* DrawArrowCGClippingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawArrowCGClippingViewController.swift; sourceTree = "<group>"; };
+		210218722895B92300195DC9 /* 02views-gc-commands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02views-gc-commands.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		210218752895B92300195DC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		210218772895B92300195DC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		210218792895B92300195DC9 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		2102187E2895B92400195DC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		210218812895B92400195DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		210218832895B92400195DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		217EA76B28B9197000CB24F8 /* ArrowClippingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowClippingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +50,7 @@
 		210218692895B92300195DC9 = {
 			isa = PBXGroup;
 			children = (
-				210218742895B92300195DC9 /* template-swift-no-sb */,
+				210218742895B92300195DC9 /* 02views-gc-commands */,
 				210218732895B92300195DC9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +58,52 @@
 		210218732895B92300195DC9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				210218722895B92300195DC9 /* template-swift-no-sb.app */,
+				210218722895B92300195DC9 /* 02views-gc-commands.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		210218742895B92300195DC9 /* template-swift-no-sb */ = {
+		210218742895B92300195DC9 /* 02views-gc-commands */ = {
 			isa = PBXGroup;
 			children = (
+				219C247B28B96C9000C6A6EE /* Views */,
+				219C247A28B96C7700C6A6EE /* Controllers */,
 				210218752895B92300195DC9 /* AppDelegate.swift */,
 				210218772895B92300195DC9 /* SceneDelegate.swift */,
-				210218792895B92300195DC9 /* RootViewController.swift */,
 				2102187E2895B92400195DC9 /* Assets.xcassets */,
 				210218802895B92400195DC9 /* LaunchScreen.storyboard */,
 				210218832895B92400195DC9 /* Info.plist */,
 			);
-			path = "template-swift-no-sb";
+			path = "02views-gc-commands";
+			sourceTree = "<group>";
+		};
+		219C247A28B96C7700C6A6EE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				210218792895B92300195DC9 /* RootViewController.swift */,
+				21011C7128B84F4F0017A215 /* DrawArrowCGBlendViewController.swift */,
+				21011C7328B84F640017A215 /* DrawArrowUIKitViewController.swift */,
+				21011C7928B85ED30017A215 /* DrawArrowCGClippingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		219C247B28B96C9000C6A6EE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				21011C7728B859880017A215 /* ArrowUIKitView.swift */,
+				217EA76B28B9197000CB24F8 /* ArrowClippingView.swift */,
+				21011C7528B853790017A215 /* ArrowCGBlendView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		210218712895B92300195DC9 /* template-swift-no-sb */ = {
+		210218712895B92300195DC9 /* 02views-gc-commands */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 210218862895B92400195DC9 /* Build configuration list for PBXNativeTarget "template-swift-no-sb" */;
+			buildConfigurationList = 210218862895B92400195DC9 /* Build configuration list for PBXNativeTarget "02views-gc-commands" */;
 			buildPhases = (
 				2102186E2895B92300195DC9 /* Sources */,
 				2102186F2895B92300195DC9 /* Frameworks */,
@@ -79,9 +113,9 @@
 			);
 			dependencies = (
 			);
-			name = "template-swift-no-sb";
+			name = "02views-gc-commands";
 			productName = "template-swift-no-sb";
-			productReference = 210218722895B92300195DC9 /* template-swift-no-sb.app */;
+			productReference = 210218722895B92300195DC9 /* 02views-gc-commands.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +133,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2102186D2895B92300195DC9 /* Build configuration list for PBXProject "template-swift-no-sb" */;
+			buildConfigurationList = 2102186D2895B92300195DC9 /* Build configuration list for PBXProject "02views-gc-commands" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +146,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				210218712895B92300195DC9 /* template-swift-no-sb */,
+				210218712895B92300195DC9 /* 02views-gc-commands */,
 			);
 		};
 /* End PBXProject section */
@@ -134,9 +168,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21011C7228B84F4F0017A215 /* DrawArrowCGBlendViewController.swift in Sources */,
 				2102187A2895B92300195DC9 /* RootViewController.swift in Sources */,
+				21011C7A28B85ED30017A215 /* DrawArrowCGClippingViewController.swift in Sources */,
+				217EA76C28B9197000CB24F8 /* ArrowClippingView.swift in Sources */,
+				21011C7628B853790017A215 /* ArrowCGBlendView.swift in Sources */,
 				210218762895B92300195DC9 /* AppDelegate.swift in Sources */,
 				210218782895B92300195DC9 /* SceneDelegate.swift in Sources */,
+				21011C7828B859880017A215 /* ArrowUIKitView.swift in Sources */,
+				21011C7428B84F640017A215 /* DrawArrowUIKitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "template-swift-no-sb/Info.plist";
+				INFOPLIST_FILE = "02views-gc-commands/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -286,7 +326,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.axsoftware.template-swift-no-sb";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.axsoftware.02views-gc-commands";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -302,7 +342,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "template-swift-no-sb/Info.plist";
+				INFOPLIST_FILE = "02views-gc-commands/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -312,7 +352,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.axsoftware.template-swift-no-sb";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.axsoftware.02views-gc-commands";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -323,7 +363,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2102186D2895B92300195DC9 /* Build configuration list for PBXProject "template-swift-no-sb" */ = {
+		2102186D2895B92300195DC9 /* Build configuration list for PBXProject "02views-gc-commands" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				210218842895B92400195DC9 /* Debug */,
@@ -332,7 +372,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		210218862895B92400195DC9 /* Build configuration list for PBXNativeTarget "template-swift-no-sb" */ = {
+		210218862895B92400195DC9 /* Build configuration list for PBXNativeTarget "02views-gc-commands" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				210218872895B92400195DC9 /* Debug */,
