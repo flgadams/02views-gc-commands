@@ -74,7 +74,7 @@ class RootViewController: UIViewController {
     }()
     @objc fileprivate func gradientButtonTouchSelector(sender:Any) {
         let file = "\(#file)".components(separatedBy: "/").last!; NSLog("\n\u{2705} \(#function) Line \(#line) of \(file)\n")
-        
+        present(DrawArrowGradientViewController(), animated: true)
     }
     lazy var uiPatternButton:UIButton = {  //snip zxuibtnl
         let ui = UIButton(type: .system)
@@ -89,7 +89,7 @@ class RootViewController: UIViewController {
     }()
     @objc fileprivate func uipatternButtonTouchSelector(sender:Any) {
         let file = "\(#file)".components(separatedBy: "/").last!; NSLog("\n\u{2705} \(#function) Line \(#line) of \(file)\n")
-        
+        present(DrawArrowPatternViewController(), animated: true)
     }
     lazy var cgPatternButton:UIButton = {  //snip zxuibtnl
         let ui = UIButton(type: .system)
@@ -106,9 +106,9 @@ class RootViewController: UIViewController {
         let file = "\(#file)".components(separatedBy: "/").last!; NSLog("\n\u{2705} \(#function) Line \(#line) of \(file)\n")
         
     }
-    lazy var shadowsButton:UIButton = {  //snip zxuibtnl
+    lazy var contentButton:UIButton = {  //snip zxuibtnl
         let ui = UIButton(type: .system)
-        ui.setTitle("Shadows", for: .normal)
+        ui.setTitle("Content ", for: .normal)
         ui.titleLabel?.font = .systemFont(ofSize: 20)
         ui.setTitleColor(UIColor.white, for: UIControl.State.normal)
         ui.backgroundColor = UIColor.orange
@@ -119,6 +119,7 @@ class RootViewController: UIViewController {
     }()
     @objc fileprivate func shadowsButtonTouchSelector(sender:Any) {
         let file = "\(#file)".components(separatedBy: "/").last!; NSLog("\n\u{2705} \(#function) Line \(#line) of \(file)\n")
+        present(ContentViewController(), animated: true)
         
     }
     lazy var eraseButton:UIButton = {  //snip zxuibtnl
@@ -134,6 +135,22 @@ class RootViewController: UIViewController {
     }()
     @objc fileprivate func eraseButtonTouchSelector(sender:Any) {
         let file = "\(#file)".components(separatedBy: "/").last!; NSLog("\n\u{2705} \(#function) Line \(#line) of \(file)\n")
+        present(EraseViewController(), animated: true)
+    }
+    lazy var arrowRotateButton:UIButton = {  //snip zxuibtnl
+        let ui = UIButton(type: .system)
+        ui.setTitle("Arrow Rotate, add shadow, transparency", for: .normal)
+        ui.titleLabel?.font = .systemFont(ofSize: 20)
+        ui.setTitleColor(UIColor.white, for: UIControl.State.normal)
+        ui.backgroundColor = UIColor.orange
+        ui.layer.borderWidth = 1
+        ui.layer.cornerRadius = 16
+        ui.addTarget(self, action: #selector(arrowRotateButtonTouchSelector), for: .touchUpInside)
+        return ui
+    }()
+    @objc fileprivate func arrowRotateButtonTouchSelector(sender:Any) {
+        let file = "\(#file)".components(separatedBy: "/").last!; NSLog("\n\u{2705} \(#function) Line \(#line) of \(file)\n")
+        present(DrawArrowRotateViewController(), animated: true)
         
     }
     
@@ -144,7 +161,8 @@ class RootViewController: UIViewController {
         self.view.backgroundColor = .systemGray
         
         for (i,b) in [drawArrowCGButton, drawArrowUIKitButton,drawArrowCGClippingButton,
-                    gradientButton,uiPatternButton,cgPatternButton,shadowsButton,eraseButton].enumerated() {
+                    gradientButton,uiPatternButton,cgPatternButton,contentButton,eraseButton,
+                    arrowRotateButton].enumerated() {
             self.view.addSubview(b)
             b.frame = CGRect(x: 0, y: 50 + i * 50, width: Int(self.view.bounds.width), height: 50)
             b.autoresizingMask = [.flexibleWidth]
@@ -445,3 +463,56 @@ class RootViewController: UIViewController {
 
  */
 
+
+/* DRAW A STAR
+ 
+ //// Star Drawing
+ UIBezierPath* starPath = [UIBezierPath bezierPath];
+ [starPath moveToPoint: CGPointMake(45.25, 0)];
+ [starPath addLineToPoint: CGPointMake(61.13, 23)];
+ [starPath addLineToPoint: CGPointMake(88.29, 30.75)];
+ [starPath addLineToPoint: CGPointMake(70.95, 52.71)];
+ [starPath addLineToPoint: CGPointMake(71.85, 80.5)];
+ [starPath addLineToPoint: CGPointMake(45.25, 71.07)];
+ [starPath addLineToPoint: CGPointMake(18.65, 80.5)];
+ [starPath addLineToPoint: CGPointMake(19.55, 52.71)];
+ [starPath addLineToPoint: CGPointMake(2.21, 30.75)];
+ [starPath addLineToPoint: CGPointMake(29.37, 23)];
+ [starPath closePath];
+ [UIColor.redColor setStroke];
+ starPath.lineWidth = 1;
+ [starPath stroke];
+ 
+ 
+ */
+/*  another way to make a star 
+ 
+ extension CGPoint {
+     func pointFrom(angle: CGFloat, radius: CGFloat) -> CGPoint {
+         return CGPoint(x: self.x + radius * cos(CGFloat.pi - angle), y: self.y - radius * sin(CGFloat.pi - angle))
+     }
+ }
+
+ extension UIBezierPath {
+     func addStar(rect: CGRect, extrusion: CGFloat, points: Int) {
+         self.move(to: CGPoint(x: 0, y: 0))
+         let center = CGPoint(x: rect.width / 2.0, y: rect.height / 2.0)
+         var angle:CGFloat = -CGFloat.pi / 2.0
+         let angleIncrement = CGFloat.pi * 2.0 / CGFloat(points)
+         let radius = rect.width / 2.0
+         var firstPoint = true
+         for _ in 1...points {
+             let point = center.pointFrom(angle: angle, radius: radius)
+             let nextPoint = center.pointFrom(angle: angle + angleIncrement, radius: radius)
+             let midPoint = center.pointFrom(angle: angle + angleIncrement / 2.0, radius: extrusion)
+             if firstPoint {
+                 firstPoint = false
+                 self.move(to: point)
+             }
+             self.addLine(to: midPoint)
+             self.addLine(to: nextPoint)
+             angle += angleIncrement
+             }
+     }
+ 
+ */

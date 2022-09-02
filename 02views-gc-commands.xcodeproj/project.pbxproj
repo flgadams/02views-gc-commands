@@ -17,7 +17,18 @@
 		2102187A2895B92300195DC9 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210218792895B92300195DC9 /* RootViewController.swift */; };
 		2102187F2895B92400195DC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2102187E2895B92400195DC9 /* Assets.xcassets */; };
 		210218822895B92400195DC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210218802895B92400195DC9 /* LaunchScreen.storyboard */; };
+		2165228D28BF0BBA0039329F /* ArrowRotateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2165228C28BF0BBA0039329F /* ArrowRotateView.swift */; };
 		217EA76C28B9197000CB24F8 /* ArrowClippingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217EA76B28B9197000CB24F8 /* ArrowClippingView.swift */; };
+		2189237D28BEEF8A00704598 /* ArrowPatternView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2189237C28BEEF8A00704598 /* ArrowPatternView.swift */; };
+		2189237F28BEF08400704598 /* DrawArrowPatternViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2189237E28BEF08400704598 /* DrawArrowPatternViewController.swift */; };
+		21F12D5528C1807300784750 /* DrawArrowRotateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F12D5428C1807300784750 /* DrawArrowRotateViewController.swift */; };
+		21F12D5728C18AFB00784750 /* EraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F12D5628C18AFB00784750 /* EraseView.swift */; };
+		21F12D5928C18BC700784750 /* EraseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F12D5828C18BC700784750 /* EraseViewController.swift */; };
+		21F12D5B28C18CB000784750 /* Erase2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F12D5A28C18CB000784750 /* Erase2View.swift */; };
+		21F12D5D28C1912100784750 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F12D5C28C1912100784750 /* ContentView.swift */; };
+		21F12D5F28C1913E00784750 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F12D5E28C1913E00784750 /* ContentViewController.swift */; };
+		21FF237C28BAD13400520F4F /* ArrowGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF237B28BAD13400520F4F /* ArrowGradientView.swift */; };
+		21FF237E28BAD1C600520F4F /* DrawArrowGradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21FF237D28BAD1C600520F4F /* DrawArrowGradientViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +44,18 @@
 		2102187E2895B92400195DC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		210218812895B92400195DC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		210218832895B92400195DC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2165228C28BF0BBA0039329F /* ArrowRotateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowRotateView.swift; sourceTree = "<group>"; };
 		217EA76B28B9197000CB24F8 /* ArrowClippingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowClippingView.swift; sourceTree = "<group>"; };
+		2189237C28BEEF8A00704598 /* ArrowPatternView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowPatternView.swift; sourceTree = "<group>"; };
+		2189237E28BEF08400704598 /* DrawArrowPatternViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawArrowPatternViewController.swift; sourceTree = "<group>"; };
+		21F12D5428C1807300784750 /* DrawArrowRotateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawArrowRotateViewController.swift; sourceTree = "<group>"; };
+		21F12D5628C18AFB00784750 /* EraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EraseView.swift; sourceTree = "<group>"; };
+		21F12D5828C18BC700784750 /* EraseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EraseViewController.swift; sourceTree = "<group>"; };
+		21F12D5A28C18CB000784750 /* Erase2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Erase2View.swift; sourceTree = "<group>"; };
+		21F12D5C28C1912100784750 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		21F12D5E28C1913E00784750 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		21FF237B28BAD13400520F4F /* ArrowGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrowGradientView.swift; sourceTree = "<group>"; };
+		21FF237D28BAD1C600520F4F /* DrawArrowGradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawArrowGradientViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +106,11 @@
 				21011C7128B84F4F0017A215 /* DrawArrowCGBlendViewController.swift */,
 				21011C7328B84F640017A215 /* DrawArrowUIKitViewController.swift */,
 				21011C7928B85ED30017A215 /* DrawArrowCGClippingViewController.swift */,
+				21FF237D28BAD1C600520F4F /* DrawArrowGradientViewController.swift */,
+				2189237E28BEF08400704598 /* DrawArrowPatternViewController.swift */,
+				21F12D5428C1807300784750 /* DrawArrowRotateViewController.swift */,
+				21F12D5828C18BC700784750 /* EraseViewController.swift */,
+				21F12D5E28C1913E00784750 /* ContentViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -94,6 +121,12 @@
 				21011C7728B859880017A215 /* ArrowUIKitView.swift */,
 				217EA76B28B9197000CB24F8 /* ArrowClippingView.swift */,
 				21011C7528B853790017A215 /* ArrowCGBlendView.swift */,
+				21FF237B28BAD13400520F4F /* ArrowGradientView.swift */,
+				2189237C28BEEF8A00704598 /* ArrowPatternView.swift */,
+				2165228C28BF0BBA0039329F /* ArrowRotateView.swift */,
+				21F12D5628C18AFB00784750 /* EraseView.swift */,
+				21F12D5A28C18CB000784750 /* Erase2View.swift */,
+				21F12D5C28C1912100784750 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -168,15 +201,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F12D5F28C1913E00784750 /* ContentViewController.swift in Sources */,
+				21FF237C28BAD13400520F4F /* ArrowGradientView.swift in Sources */,
+				2189237D28BEEF8A00704598 /* ArrowPatternView.swift in Sources */,
 				21011C7228B84F4F0017A215 /* DrawArrowCGBlendViewController.swift in Sources */,
 				2102187A2895B92300195DC9 /* RootViewController.swift in Sources */,
+				21F12D5928C18BC700784750 /* EraseViewController.swift in Sources */,
 				21011C7A28B85ED30017A215 /* DrawArrowCGClippingViewController.swift in Sources */,
+				21F12D5728C18AFB00784750 /* EraseView.swift in Sources */,
 				217EA76C28B9197000CB24F8 /* ArrowClippingView.swift in Sources */,
+				21F12D5D28C1912100784750 /* ContentView.swift in Sources */,
 				21011C7628B853790017A215 /* ArrowCGBlendView.swift in Sources */,
+				2189237F28BEF08400704598 /* DrawArrowPatternViewController.swift in Sources */,
 				210218762895B92300195DC9 /* AppDelegate.swift in Sources */,
+				21F12D5528C1807300784750 /* DrawArrowRotateViewController.swift in Sources */,
+				21FF237E28BAD1C600520F4F /* DrawArrowGradientViewController.swift in Sources */,
 				210218782895B92300195DC9 /* SceneDelegate.swift in Sources */,
+				21F12D5B28C18CB000784750 /* Erase2View.swift in Sources */,
 				21011C7828B859880017A215 /* ArrowUIKitView.swift in Sources */,
 				21011C7428B84F640017A215 /* DrawArrowUIKitViewController.swift in Sources */,
+				2165228D28BF0BBA0039329F /* ArrowRotateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
